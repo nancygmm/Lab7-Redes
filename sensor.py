@@ -1,6 +1,6 @@
 import random
 
-WIND_DIRS = ["N", "NO", "O", "SO", "S", "SE", "E", "NE"] # Dirección en la que puede ir el viento
+WIND_DIRS = ["N", "NO", "O", "SO", "S", "SE", "E", "NE"]
 
 def generar_medicion():
     temp = random.gauss(25, 10)
@@ -19,5 +19,5 @@ def generar_medicion():
     }
 
 if __name__ == "__main__":
-    for _ in range(10): # Cambiar al rango de datos que se desee ver
+    for _ in range(10): 
         print(generar_medicion())
